@@ -4,7 +4,7 @@ pipeline {
           stage('checkout') {
             steps {
               checkout scm
-              def mvnHome = tool 'maven-3'
+              def mvHome = tool 'maven-3'
                          }
                  }
             stage('Build') {
