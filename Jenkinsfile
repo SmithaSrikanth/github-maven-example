@@ -15,7 +15,7 @@ pipeline {
         steps {
            script {
             sh 'java -version'
-            sh 'mvn clean install'
+            sh 'sudo yum -y install maven'
           /*env.JAVA = "${tool 'JAVA_1.8'}"
           checkout scm
           def mvnHome = tool 'maven-3'
