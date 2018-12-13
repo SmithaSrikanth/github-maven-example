@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
         steps {
            script {
-            sh 'java -version'
+            sh 'sudo yum -y install unzip java-1.8.0-openjdk'
             sh 'sudo yum -y install maven'
           /*env.JAVA = "${tool 'JAVA_1.8'}"
           checkout scm
