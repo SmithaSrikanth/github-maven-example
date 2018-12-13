@@ -7,6 +7,7 @@ pipeline {
             script { 
                checkout scm
                def mvnHome = tool 'maven-3'
+               def javaHome = tool 'JAVA-1.8.0'
                   }
              }
             }
