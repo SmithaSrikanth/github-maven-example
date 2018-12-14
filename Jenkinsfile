@@ -16,7 +16,7 @@ pipeline {
            script {
             sh 'sudo yum -y install unzip java-1.8.0-openjdk'
             sh 'sudo yum -y install maven'
-            sh 'mvn clean install'
+            sh 'sudo mvn clean install'
           /*env.JAVA = "${tool 'JAVA_1.8'}"
           checkout scm
           def mvnHome = tool 'maven-3'
